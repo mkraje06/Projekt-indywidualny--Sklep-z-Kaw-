@@ -1,4 +1,4 @@
-<!Doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,136 +10,133 @@
 </head>
 
 <body>
-    
+
     <header class="header">
         <img src="images/background.png" alt="">
-        
+
         <div class="flex">
           <div class="head-description">
             <div class="logo">
               <h3 class="">EL TIGRE </h3>
               <p>VENEZUELA COFFEE BEANS</p>
             </div>
-            
+
             <button class="hamburger" id="hamburger" type="button">
               <i class="fas fa-bars"></i>
-            
             </button>
+
             <ul class="nav-ul main-nav" id="nav-ul">
               <li><a href="#home">HOME</a></li>
               <li><a href="#products">PRODUCTS</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
-          
+
         </div>
-          
+
           <div class="main-text">
             <h1 class="skill-left">HOME OF</h1>
             <h1 class="skill-right">ORIGINAL TASTES</h1>
             <p class="line"></p>
           </div>
-    
+
           <div class="bottom-text">
             <h3>DISCOVER</h3>
             <i class="far fa-arrow-alt-circle-down"></i>
           </div>
         </div>
       </header>
-      
+
       <article class="article-product home-wrapper active" id="article-product">
-        
+
         <div class="title">
           <h2>PRODUCTS</h2>
         </div>
-        
+
         <script id="template-products-widget" type="text/x-handlebars-template">
           <div class="product-widget container">
             <div class="skill-right">
               <div class="skill-image">
-
             </div>
             <div class="skill-description">
               <h3 class="name">{{{ no }}} {{{ name }}}</h3>
-              
+
               <div class="row description">
                 <p class="border-top col-2"></p>
                 <span class="col-8">{{{ description }}}</span>
               </div>
-              
+
               <div class="row">
                 <div class="col-sm-5 specification">
                   <p>ROASTING: <span>{{{ roasting }}}</span></p>
                   <p>INTENSITY: <span>{{{ intensity }}}</span></p>
                 </div>
-                
+
                 <div class="col-sm-5">
                   {{{ most-popular }}}
-                
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-      
+
         <article class="article-about active" id="article-about">
-            
+
             <div class="home-widget">
               <img src="images/about-us.jpg" alt=".">
-              
+
               <div class="title about">
                 <h2>ABOUT US</h2>
               </div>
-              
+
               <div class="who">
                 <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new,
                   something original. Our coffees reflect us – young, wild and free. We are on the journey of new tastes...
                   <br>Join us!<br> 
                 </p>
-
               </div>
             </div>
           </article>
-    
+
         </script>
-    </article>            
-    
+    </article>
+
     <article class="article-contact" id="article-contact">
-        
+
         <div class="contact-widget">
-          
             <div class="title about">
             <h2>CONTACT US</h2>
           </div>
-         
+
           <form class="form" action="mailto:sadow.adrian@gmail.com" method="post" enctype="text/plain">
             <div class="form-row">
               <label for="filed-name">NAME</label><br>
               <input type="text" name="name" required id="filed-name">
             </div>
-            
+
             <div class="form-row">
               <label for="filed-name">TITLE</label><br>
               <input type="text" name="title" required id="filed-title">
             </div>
-            
+
             <div class="form-row">
               <label for="field-message" class="field-message">MESSAGE</label>
               <textarea name="message" required id="field-message"></textarea>
             </div>
-            
+
             <div class="form-row">
               <button type="submit" class="submit-btn">SUBMIT</button>
             </div>
-          
+
           </form>
         </div>
       </article>
-    
+
       <footer>
         <p> © 2021 EL TIGRE inc.</p>
       </footer>
 
     <script src="js/script.js" type="module"></script>
-     
+
 </body>
-</html>>
+</html>
