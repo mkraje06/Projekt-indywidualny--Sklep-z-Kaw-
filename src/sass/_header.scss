@@ -1,0 +1,155 @@
+header {
+  max-width: 1920px;
+  max-height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(31%);
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-description {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  font-weight: black;
+  color: $color-light;
+  margin-left: 15%;
+  
+  h3 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+}
+
+.nav-ul {
+  margin-right: 15%;
+  padding: 10px 0;
+
+  li {
+    display: inline-block;
+  }
+
+  a{
+    text-decoration: none;
+    color: $color-light;
+    filter: brightness(50%);
+    font-size: 20px;
+    font-weight: $font-weight-semi-bold;
+    margin: 20px 30px 30px 0;
+
+    &:hover {
+      filter: brightness(100%);
+    }
+  }
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.main-text {
+  position: absolute;
+  color: $color-gold;
+  font-size: 64px;
+  font-weight: 700;
+  width: 100%;
+  //top: 0;
+  //left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    z-index: 2;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    //align-content: center;
+    //flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .skill-left {
+    width: 80%;
+    text-align: left;
+    // margin-left: 15%;
+    // margin-top: 10%;
+    // źle wycentrowane !!!!
+    //left: 15%;
+  }
+
+  .skill-right {
+    width: 90%;
+    text-align: right;
+    // margin-right: 10%;
+    //margin-top: 0;
+    //right: 15%;
+  }
+
+  .line {
+    margin: 20px 0 0 0;
+    right: 50%;
+    width: 20%;
+    border-top: 3px solid $color-gold;
+  }
+}
+
+
+.bottom-text {
+  width: 100%;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-90%, -65%);
+  color: $color-light;
+  font-size: 34px;
+  font-weight: 100;
+  // justify-content: center;
+  // align-items: flex-end;
+}
+
+// @media (max-width: 1201px) {
+//   .main-text h1 {
+//     font-size: 88px;
+//   }
+// }
+

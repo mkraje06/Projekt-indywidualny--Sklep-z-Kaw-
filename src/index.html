@@ -44,7 +44,7 @@
             <i class="far fa-arrow-alt-circle-down"></i>
           </div>
         </div>
-      </header>
+    </header>
 
       <article class="article-product home-wrapper active" id="article-product">
 
@@ -52,10 +52,14 @@
           <h2>PRODUCTS</h2>
         </div>
 
-        <script id="template-products-widget" type="text/x-handlebars-template">
+        <div class="products-list"></div>
+
+        <script id="template-product-widget" type="text/x-handlebars-template">
           <div class="product-widget container">
             <div class="skill-right">
               <div class="skill-image">
+                {{{ image }}}
+              </div>
             </div>
             <div class="skill-description">
               <h3 class="name">{{{ no }}} {{{ name }}}</h3>
@@ -136,6 +140,7 @@
         <p> © 2021 EL TIGRE inc.</p>
       </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/script.js" type="module"></script>
 
 </body>

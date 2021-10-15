@@ -1,5 +1,5 @@
 import Product from './Product.js';
-import { article, classNames, select, settings } from './settings.js';
+import { classNames, select, settings } from './settings.js';
 
 const app = {
 
@@ -7,9 +7,9 @@ const app = {
 
     const links = document.querySelectorAll(select.nav.links);
 
-    const articleAbout = document.querySelector(article.about);
-    const articleProduct = document.querySelector(article.products);
-    const articleContact = document.querySelector(article.contact);
+    const articleAbout = document.querySelector(select.pages.about);
+    const articleProduct = document.querySelector(select.pages.products);
+    const articleContact = document.querySelector(select.pages.contact);
   
     for (let link of links) {
       link.addEventListener('click', function(event) {
@@ -75,7 +75,6 @@ const app = {
 
     thisApp.initPages();
     thisApp.initData();
-    thisApp.initMenu();
     //thisApp.initHome();
     //thisApp.initContact();
     thisApp.initHamburger();
