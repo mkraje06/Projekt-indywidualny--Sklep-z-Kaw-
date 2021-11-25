@@ -15,16 +15,16 @@ class Product {
     const thisProduct = this;
 
     const generatedHTML = templates.menuProduct({ ...thisProduct.data, image: thisProduct.data.images[0] });
-    
+
 
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
     //console.log(thisProduct.element);
 
- 
+
     const menuContainerHome = document.querySelector(select.containerOf.productsList);
-    
+
     menuContainerHome.appendChild(thisProduct.element);
-    
+
   }
 }
 

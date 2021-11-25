@@ -10,16 +10,16 @@ const app = {
     const articleAbout = document.querySelector(select.pages.about);
     const articleProduct = document.querySelector(select.pages.products);
     const articleContact = document.querySelector(select.pages.contact);
-  
+
     for (let link of links) {
       link.addEventListener('click', function(event) {
         event.preventDefault();
         const clickedElement = this;
-        
+
         articleAbout.classList.remove(classNames.pages.active);
         articleProduct.classList.remove(classNames.pages.active);
         articleContact.classList.remove(classNames.pages.active);
-        
+
         const href = clickedElement.getAttribute('href');
 
         if (href == '#products') {
@@ -59,7 +59,7 @@ const app = {
 
   },
 
- 
+
   initHamburger: function(){
     const hamburger = document.getElementById('hamburger');
     const navUL= document.getElementById('nav-ul');
@@ -78,9 +78,9 @@ const app = {
     //thisApp.initHome();
     //thisApp.initContact();
     thisApp.initHamburger();
-  
+
   },
-    
+
 };
 
 app.init();

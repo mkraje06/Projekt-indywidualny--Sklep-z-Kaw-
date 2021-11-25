@@ -10,7 +10,7 @@
     height: 100%;
     display: block;
     //object-fit: cover;
-    // -webkit-box-shadow: 0px 0px 10px 0px #000000; 
+    // -webkit-box-shadow: 0px 0px 10px 0px #000000;
     // box-shadow: 0px 0px 10px 0px #000000;
   }
 
@@ -31,6 +31,7 @@
 
   .border-top {
     border-top: 3px solid $color-gold;
+    margin-left: 15px;
   }
 
   .specification {
